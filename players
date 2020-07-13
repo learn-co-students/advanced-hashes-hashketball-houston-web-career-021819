@@ -1,0 +1,30 @@
+
+[1mFrom:[0m /home/practical-link-3613/advanced-hashes-hashketball-houston-web-career-021819/hashketball.rb @ line 191 Object#player_numbers:
+
+    [1;34m182[0m: [32mdef[0m [1;34mplayer_numbers[0m (team_name)
+    [1;34m183[0m:   player_number_array = []
+    [1;34m184[0m:   check_val = [1;34m0[0m
+    [1;34m185[0m:   game_hash.each [32mdo[0m |home_away, home_away_values|
+    [1;34m186[0m:     home_away_values.each [32mdo[0m |high_level, info|
+    [1;34m187[0m:       [32mif[0m check_val == [1;34m1[0m
+    [1;34m188[0m:         check_val += [1;34m1[0m
+    [1;34m189[0m:       [32melsif[0m check_val == [1;34m2[0m
+    [1;34m190[0m:         info.each [32mdo[0m |players, player_stats|
+ => [1;34m191[0m:           binding.pry
+    [1;34m192[0m:           player_stats.each [32mdo[0m |stat_key, stat_value|
+    [1;34m193[0m:             [32mif[0m stat_key == [33m:number[0m
+    [1;34m194[0m:               player_number_array << stat_value
+    [1;34m195[0m:             [32mend[0m
+    [1;34m196[0m:           [32mend[0m
+    [1;34m197[0m:         [32mend[0m
+    [1;34m198[0m:       [32melsif[0m high_level == [33m:team_name[0m
+    [1;34m199[0m:         [32mif[0m info == team_name
+    [1;34m200[0m:           check_val = [1;34m1[0m
+    [1;34m201[0m:           [1;34m#return 25[0m
+    [1;34m202[0m:         [32mend[0m
+    [1;34m203[0m:       [32mend[0m
+    [1;34m204[0m:     [32mend[0m
+    [1;34m205[0m:   [32mend[0m
+    [1;34m206[0m:  [1;34m#player_number_array[0m
+    [1;34m207[0m: [32mend[0m
+
